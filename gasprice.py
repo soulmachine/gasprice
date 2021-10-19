@@ -32,6 +32,6 @@ if __name__ == "__main__":
     while True:
         get_gas_price()
         # Run for 30 minutes - 5 seconds
-        if time.time() - start_time > 30 * 60 - 5:
+        if (int(time.time()) + 5) // 60 % 30 == 0:
             break
         time.sleep(5)  # sleep for 5 seconds
