@@ -2,9 +2,9 @@ name: "GitHub Actions GasPrice Bot"
 
 on:
   push:
-  schedule:
-    # Run every 30 minutes
-    - cron: "*/30 * * * *"
+  # schedule:
+  #   # Run every 30 minutes
+  #   - cron: "*/30 * * * *"
 
 jobs:
   build:
